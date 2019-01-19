@@ -1,4 +1,4 @@
-### Changing the delay
+## Changing the delay
 
 This configuration is slightly technical, you may probably ignore
 it. 
@@ -63,3 +63,37 @@ every cards, the theoretical interval will be incremented of
 n*"interval coefficient" days. If this configuration is set to 0, the
 theoretical interval is not changed. If this configuration is set to
 1, then every days of delay is added as interval.
+
+
+## The case of negative days
+
+There is a configuration "coefficient for negative". Its possible values
+are:
+* True: in which case the coefficient for positive number is also used
+  for negative
+* False: in which case when a negative number of day is added,
+  intervals are note changed
+* a number: in which case this number is added, as is in the positive
+  case.
+
+It is not clear whether changing the interval is a good idea in
+general.
+
+### Why you may want to change intervals for negative number of days.
+
+If you added 10 days, and then remove 3 days, you probably want to
+change the interval. So in the end, it will be like you directly added
+7 days. (Note that because of rounding error, adding 10 and removing 3
+days is not exactly the same as directly adding 7 days)
+
+### Why you may want not to change intervals
+
+Imagine that you have added 7 days to all cards.
+Then you see a new card. Let's say it now has an interval of four
+days.
+
+If you decide to remove 7 days to every cards. This card will have its
+interval decreased, and will have an interval of one. And there is
+absolutly no reason to want it. The problem here is that this card was
+new when you added days, and is not new anymore. Thus, only the second
+action is applied to it.

@@ -31,7 +31,7 @@ def addDelay(cids):
         card = mw.col.getCard(cid)
         if card.type !=2:
             continue
-        card.ivl += round(delay * getIntervalCoefficient())
+        card.ivl += max(0,round(delay * (getIntervalCoefficient() if delay >0 else getIntervalForNegativeCoefficient())))
         card.due += delay
         card.flush()
 
