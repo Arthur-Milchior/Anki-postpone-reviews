@@ -1,1 +1,2 @@
-zip addDays.zip *py *.md LICENSE config* zipping
+rm addDays.zip
+zip -R addDays.zip *py README.md LICENSE config* zipping ankiweb  --exclude \*~

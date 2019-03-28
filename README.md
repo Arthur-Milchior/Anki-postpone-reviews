@@ -101,7 +101,7 @@ cards in advance, the new interval for this deck will make no sens.
 
 Key         |Value
 ------------|-------------------------------------------------------------------
-Copyright   | Arthur Milchior <arthur@milchior.fr>
+Copyright   | Arthur Milchior <arthur@milchior.fr>, Jasonbarc https://github.com/jasonsparc
 Based on    | Anki code by Damien Elmes <anki@ichi2.net>
 License     | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in   | https://github.com/Arthur-Milchior/Anki-postpone-reviews
