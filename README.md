@@ -8,7 +8,7 @@ makes people quit anki.
 While anki's right in a theoretical sens, it is wrong in a practical
 sens. It may be better for the memory to see everything as soon as
 possible. But in practice, it's even better to be late and not to quit
-anki. 
+anki.
 
 This add-on is thus made for those people, who knows they are human,
 and not perfect machine. Who knows that it's better to cheat with anki
@@ -32,7 +32,7 @@ computer, phone, or using ankiweb.
 You can either add delays to every cards or only to selected one.
 
 ### All cards
-In the main window, open ```tools``` then ```Postpone cards```. 
+In the main window, open ```tools``` then ```Postpone cards```.
 
 ### Selected cards
 In the browser, select every card you want to move. Select ```Edit```,
@@ -48,11 +48,11 @@ remove days. This may mostly be useful if you figure out you have
 added to many days.
 
 The interval of each card is also changed, to reflect the change in
-due date. See the configuration section below to learn more about it. 
+due date. See the configuration section below to learn more about it.
 
 ## Configuration
 The documentation for the configuration file can be found on
-[config.md](https://github.com/Arthur-Milchior/Anki-postpone-reviews).
+[config.md](https://github.com/Arthur-Milchior/Anki-postpone-reviews/config.md).
 
 
 ## Internal
@@ -62,7 +62,7 @@ menus.
 ## Version 2.0
 There are nothing similar in version 2.0 as far as I know
 
-## TODO 
+## TODO
 ### Adding smaller intervals to cards due later
 Let us assume you had spent a week without using anki. You use this
 add-on and tell anki so that you don't have to immediatly see 7 cards.
@@ -92,6 +92,10 @@ today, but you'll see the more urgent one first.
 Not that the more urgent one may potentially be the hardest one. If
 you use this option, you may have a lot of «see again» in the first
 days, instead of having a few of them during the whole week.
+
+### Warning
+If you use this add-on and decide to use a filtered deck to review
+cards in advance, the new interval for this deck will make no sens.
 
 ## Links, licence and credits
 
