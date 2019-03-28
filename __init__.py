@@ -21,12 +21,13 @@ def getReviewCards():
     return cids
 
 def addDelay(cids):
-    mw.checkpoint("Adding delay")
-    mw.progress.start()
     delay = getDelay()
     if delay is None:
         showWarning("Please enter an integral number of days")
         return
+
+    mw.checkpoint("Adding delay")
+    mw.progress.start()
     for cid in cids:
         card = mw.col.getCard(cid)
         if card.type !=2:
