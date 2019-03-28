@@ -2,7 +2,7 @@ from anki.hooks import addHook
 from aqt import mw
 from .config import getIntervalCoefficient
 from aqt.qt import QAction
-from aqt.utils import getOnlyText, tooltip, showWarning
+from aqt.utils import getText, tooltip, showWarning
 from anki.find import Finder
 
 #From https://stackoverflow.com/questions/1265665/how-can-i-check-if-a-string-represents-an-int-without-using-try-except
@@ -13,7 +13,13 @@ def RepresentsInt(s):
         return None
 
 def getDelay():
-    return RepresentsInt(getOnlyText("How many day to add to cards ? (negative number to substract days)"))
+    return getDelayWithResponse()[0]
+
+def getDelayWithResponse():
+    (s, r) = getText("How many day to add to cards ? (negative number to substract days)")
+    if r:
+        return (RepresentsInt(s), r)
+    return (None, r)
 
 def getReviewCards():
     finder = Finder(mw.col)
@@ -21,9 +27,10 @@ def getReviewCards():
     return cids
 
 def addDelay(cids):
-    delay = getDelay()
+    (delay, delayResp) = getDelayWithResponse()
     if delay is None:
-        showWarning("Please enter an integral number of days")
+        if delayResp:
+            showWarning("Please enter an integral number of days")
         return
 
     mw.checkpoint("Adding delay")
