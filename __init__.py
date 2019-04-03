@@ -1,6 +1,6 @@
 from anki.hooks import addHook
 from aqt import mw
-from .config import getIntervalCoefficient
+from .config import getIntervalCoefficient, getIntervalForNegativeCoefficient
 from aqt.qt import QAction
 from aqt.utils import getText, tooltip, showWarning
 from anki.find import Finder
@@ -36,11 +36,12 @@ def addDelay(cids):
     mw.checkpoint("Adding delay")
     mw.progress.start()
 
+    ivlDelay = max(0, round(delay * (getIntervalCoefficient() if delay >0 else getIntervalForNegativeCoefficient())))
     for cid in cids:
         card = mw.col.getCard(cid)
         if card.type !=2:
             continue
-        card.ivl += max(0,round(delay * (getIntervalCoefficient() if delay >0 else getIntervalForNegativeCoefficient())))
+        card.ivl += ivlDelay
         if card.odid: # Also update cards in filtered decks
             card.odue += delay
         else:
