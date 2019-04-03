@@ -93,10 +93,6 @@ Not that the more urgent one may potentially be the hardest one. If
 you use this option, you may have a lot of «see again» in the first
 days, instead of having a few of them during the whole week.
 
-### Warning
-If you use this add-on and decide to use a filtered deck to review
-cards in advance, the new interval for this deck will make no sens.
-
 ## Links, licence and credits
 
 Key         |Value
