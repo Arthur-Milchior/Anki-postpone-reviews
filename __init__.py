@@ -1,6 +1,6 @@
 from anki.hooks import addHook
 from aqt import mw
-from .config import getIntervalCoefficient
+from .config import getIntervalCoefficient, getIntervalForNegativeCoefficient
 from aqt.qt import QAction
 from aqt.utils import getText, tooltip, showWarning
 from anki.find import Finder
