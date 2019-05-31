@@ -1,11 +1,11 @@
 ## Changing the delay
 
 This configuration is slightly technical, you may probably ignore
-it. 
+it.
 
 In order to explain what it does, I need to explain some details about
 anki's internal. I'll use an example.
-#### Context 
+#### Context
 
 Let's say you review a card the 31rst of December, and that this card
 should be reviewd again 4 days later (i.e the 4th of January). We say
@@ -28,12 +28,12 @@ overkill. If the card is really easy, ok. But if the card is "good",
 real interval into account is a bad idea.
 
 Thus, what anki does, is that: instead of using the theoretical
-interval or the real interval  it uses a ```planning interval``` whose
+interval or the real interval  it uses a `planning interval` whose
 value is somewhere between the theoretical and the the real
-interval. More precisely, this ```planning interval``` interval is the
+interval. More precisely, this `planning interval` interval is the
 sum of the theoretical interval and of the lateness, divided by 4 if
 you pressed hard, by 2 if you pressed good, and by 1 if you pressed
-easy. 
+easy.
 
 In our previous example, the new interval will be (4+6)*1.5 if you
 press easy, (4+(6/2))*1.5=11 days if you press «good» and
