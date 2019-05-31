@@ -32,11 +32,11 @@ computer, phone, or using  Ankiweb.
 You can either add delays to every card or only to the selected one.
 
 ### All cards
-In the main window, open ```tools``` then ```Postpone cards```.
+In the main window, open `tools` then `Postpone cards`.
 
 ### Selected cards
-In the browser, select every card you want to move. Select ```Edit```,
-then select ```Postpone cards```, and the delay will only be
+In the browser, select every card you want to move. Select `Edit`,
+then select `Postpone cards`, and the delay will only be
 added to cards which you have selected and which are due.
 
 ### Both cases
