@@ -23,7 +23,7 @@ def getDelayWithResponse():
 
 def getReviewCards():
     finder = Finder(mw.col)
-    cids = finder.findCards("is:review")
+    cids = finder.findCards("")
     return cids
 
 def addDelay(cids):
@@ -39,7 +39,7 @@ def addDelay(cids):
     ivlDelay = max(0, round(delay * (getIntervalCoefficient() if delay >0 else getIntervalForNegativeCoefficient())))
     for cid in cids:
         card = mw.col.getCard(cid)
-        if card.type !=2:
+        if card.type !=2 and card.type != 1:
             continue
         card.ivl += ivlDelay
         if card.odid: # Also update cards in filtered decks
