@@ -10,7 +10,7 @@
     },
     "coefficient for negative": {
       "type": "number",
-      "default": 0.33,
+      "default": 0,
       "description": "Ratio of the exta day to add to the interval when days are removed. (0 for none, 1 too have a change in interval equal to the change in due date)"
     }
   }
