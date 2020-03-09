@@ -29,12 +29,7 @@ The configuration parameter "interval coefficient" should be a number. When you 
 
 ## The case of negative days
 
-There is a configuration "coefficient for negative". Its possible values are:
-* True: in which case the coefficient for positive number is also used   for negative
-* False: in which case when a negative number of day is added,   intervals are note changed
-* a number: in which case this number is added, as is in the positive   case.
-
-It is not clear whether changing the interval is a good idea in general.
+There is a similar configuration "coefficient for negative". It is not clear whether changing the interval is a good idea in general, so setting it to 0 may be a good heuristic, unless you're trying to cancel the fact that you added too many days in which case you may set its value equal to "interval coefficient".
 
 ### Why you may want to change intervals for negative number of days.
 

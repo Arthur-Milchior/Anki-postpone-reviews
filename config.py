@@ -24,6 +24,13 @@ def getIntervalCoefficient():
 
 def getIntervalForNegativeCoefficient():
     neg = getUserOption().get("coefficient for negative", False)
+    neg = _getIntervalForNegativeCoefficient(neg)
+    if isinstance(neg, (int, float)):
+        userOption["coefficient for negative"] = neg
+        mw.addonManager.writeConfig(__name__, userOption)
+    return neg
+
+def _getIntervalForNegativeCoefficient(neg):
     if neg is True:
         return getIntervalCoefficient()
     if neg is False:
