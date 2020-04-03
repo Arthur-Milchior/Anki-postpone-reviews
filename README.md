@@ -7,11 +7,10 @@ makes people quit Anki.
 
 While Anki is right in a theoretical sense, it is wrong in a practical
 sense. It may be better for the memory to see everything as soon as
-possible. But in practice, it's even better to be late than to quit
-Anki.
+possible. But in practice, it's better to be late than to quit Anki entirely.
 
-This add-on is thus made for those people, who know they are humans,
-and not perfect machines. Who knows that it's better to cheat with
+This add-on is thus made for those people, who know they are humans
+and not perfect machines. Who know that it's better to cheat with
 Anki a little bit than to quit it. This add-on changes the due date of
 every card already learned once, and add to it as many days as you
 want.
@@ -22,38 +21,36 @@ back. (Note however that you may find that you have forgotten more
 cards than usual).
 
 ### Second constraint
-This add-on should also satisfy a second constraint. You don't need
+This add-on should also satisfy a second constraint: you don't need
 it to review cards.
 
 You'll use this add-on to change the due date of cards. But once it's
 done and you have synchronized your deck, you can see the cards on any
-computer, phone, or using  Ankiweb.
+computer, phone, or using Ankiweb.
 
 ## Usage
 You can either add delays to every card, to a deck (and it's subdecks)
 or to cards selected in the browser.
 
-### All cards
-In the main window, open `tools` then "Postpone cards".
+### Step 1: choose the cards to be postponed
+* **All cards:** In the main window, open `Tools>Postpone cards`.
 
-### Deck
-Click on the gear, near to a browser line. Click on "Postpon cards".
+* **By deck:** On the Decks page, click on the gear icon of the deck you want
+to postpone. Then click `Postpone cards`. (This will include subdecks.)
 
-### Selected cards
-In the browser, select every card you want to move. Select `Edit`,
-then select `Postpone cards`, and the delay will only be
-added to cards which you have selected and which are due.
+* **Select cards:** In the browser, select every card you want to move.
+Click `Edit>Postpone cards` in the toolbar. The delay will only be added to
+cards which you have selected and which are due.
 
-### Both cases
+### Step 2: input the number of days to postpone
 A window will ask you how many days of delay you want to
 add. Enter the number, and press ok.
 
 The number can be either negative or positive. It means you can also
-remove days. This may mostly be useful if you figure out you have
-added too many days.
+remove days, which is useful if you added too many days.
 
 The interval of each card is also changed, to reflect the change in
-due date. See the configuration section below to learn more about it.
+due date. See the configuration section below.
 
 ## Configuration
 The documentation for the configuration file can be found on
@@ -61,11 +58,11 @@ The documentation for the configuration file can be found on
 
 
 ## Internal
-This add-on does not change any method. Of course, it adds actions in
+This add-on does not change any methods. Of course, it adds actions in
 menus.
 
 ## Version 2.0
-There is nothing similar in version 2.0 as far as I know
+There is nothing similar in version 2.0 as far as I know.
 
 ## TODO
 ### Adding smaller intervals to cards due later
