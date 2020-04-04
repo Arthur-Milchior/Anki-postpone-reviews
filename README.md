@@ -61,9 +61,6 @@ The documentation for the configuration file can be found in
 This add-on does not change any methods. Of course, it adds actions in
 menus.
 
-## Version 2.0
-There is nothing similar in version 2.0 as far as I know.
-
 ## TODO
 ### Adding smaller intervals to cards due later
 Let us assume you had spent a week without using Anki. You use this
@@ -104,4 +101,3 @@ Based on    | Anki code by Damien Elmes <anki@ichi2.net>
 License     | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in   | https://github.com/Arthur-Milchior/Anki-postpone-reviews
 Addon number| [1152543397](https://ankiweb.net/shared/info/1152543397)
-Support me on| [![Ko-fi](https://ko-fi.com/img/Kofi_Logo_Blue.svg)](https://Ko-fi.com/arthurmilchior) or [![Patreon](http://www.milchior.fr/patreon.png)](https://www.patreon.com/bePatron?u=146206)
