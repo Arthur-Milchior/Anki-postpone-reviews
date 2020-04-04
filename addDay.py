@@ -20,7 +20,7 @@ def getDelay():
 
 
 def getDelayWithResponse():
-    (s, r) = getText("How many day to add to cards ? (negative number to substract days)")
+    (s, r) = getText("How many days would you like to postpone your cards? (negative number to subtract days)")
     if r:
         return (RepresentsInt(s), r)
     return (None, r)
