@@ -46,15 +46,15 @@ cards which you have selected and which are due.
 A window will ask you how many days of delay you want to
 add. Enter the number, and press ok.
 
-The number can be either negative or positive. It means you can also
-remove days, which is useful if you added too many days.
+The number can be either negative or positive. A negative number
+removes days, which is useful if you added too many days.
 
 The interval of each card is also changed, to reflect the change in
 due date. See the configuration section below.
 
 ## Configuration
-The documentation for the configuration file can be found on
-[config.md](https://github.com/Arthur-Milchior/Anki-postpone-reviews/config.md).
+The documentation for the configuration file can be found in
+[config.md](config.md).
 
 
 ## Internal
