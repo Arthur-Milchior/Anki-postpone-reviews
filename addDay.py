@@ -27,8 +27,7 @@ def getDelayWithResponse():
 
 
 def getReviewCards():
-    finder = Finder(mw.col)
-    cids = finder.findCards("is:review")
+    cids = mw.col.find_cards("is:review")
     return cids
 
 
