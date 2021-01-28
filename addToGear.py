@@ -1,9 +1,8 @@
 from anki.find import Finder
-from anki.hooks import addHook
-from anki.lang import _
+from aqt.hooks_gen import deck_browser_will_show_options_menu
 from aqt import mw
 
-from .addDay import *
+from .addDay import addDelay
 
 
 def addActionToGear(fun, text):
@@ -12,7 +11,7 @@ def addActionToGear(fun, text):
     def aux(m, did):
         a = m.addAction(text)
         a.triggered.connect(lambda b, did=did: fun(did))
-    addHook("showDeckOptions", aux)
+    deck_browser_will_show_options_menu.append(aux)
 
 
 def cidsInDid(did):
@@ -26,4 +25,4 @@ def postponeFromDid(did):
     addDelay(cids)
 
 
-addActionToGear(postponeFromDid, _("Postpone cards"))
+addActionToGear(postponeFromDid, "Postpone cards")
