@@ -1,5 +1,5 @@
 from anki.find import Finder
-from aqt.hooks_gen import deck_browser_will_show_options_menu
+from aqt.gui_hooks import deck_browser_will_show_options_menu
 from aqt import mw
 
 from .addDay import addDelay
